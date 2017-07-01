@@ -41,8 +41,8 @@ step = 1
 sentences = []
 next_chars = []
 for i in range(0, len(text) - maxlen+1, step):
-    sentences.append(text[i: i + maxlen])
-    next_chars.append(text[i+1:i +1+ maxlen])
+    sentences.append(text[i: i + maxlen]) #input seq is from i to i  + maxlen
+    next_chars.append(text[i+1:i +1+ maxlen]) # output seq is from i+1 to i+1+maxlen
     #if i<10 :
        # print (text[i: i + maxlen])
         #print(text[i+1:i +1+ maxlen])
